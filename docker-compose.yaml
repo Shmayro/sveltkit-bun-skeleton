@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  external:
+    container_name: protfolio
+    # The name of the image that will be created when building this container
+    image: shmayro-protfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:3000
